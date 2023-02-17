@@ -1,0 +1,30 @@
+### 영화 전체 API 테스트
+GET {{host}}/movies
+
+### 영화 단일 API 테스트
+GET {{host}}/movies/1
+
+### 영화 생성 테스트
+POST {{host}}/movies
+Content-Type: application/json
+
+{
+  "title": "dummy title",
+  "year": 2020,
+  "genres": ["1111"]
+}
+
+
+### 영화 삭제 테스트
+DELETE {{host}}/movies/1
+
+### 영화 단일 업데이트 테스트
+PATCH {{host}}/movies/1
+Content-Type: application/json
+
+{
+  "title": "111-1",
+  "year": "222-2"
+}
+### 영화 검색 테스트
+GET {{host}}/movies/search?year=5000
