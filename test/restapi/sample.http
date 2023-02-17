@@ -23,8 +23,11 @@ PATCH {{host}}/movies/1
 Content-Type: application/json
 
 {
-  "title": "111-1",
-  "year": "222-2"
+  "year": 1998
 }
+
 ### 영화 검색 테스트
 GET {{host}}/movies/search?year=5000
+
+### 메인화면
+GET {{host}}
