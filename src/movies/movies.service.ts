@@ -3,6 +3,7 @@ import { Movie } from './entities/movie.entity';
 import { CreateMovieDto } from './dto/create-movie.dto';
 import { UpdateMovieDto } from './dto/update-movie.dto';
 
+//nest js는 express, fastify 2개의 framework 위에서 작동하며 이를 자유롭게 변경가능하다
 @Injectable()
 export class MoviesService {
   private movies: Movie[] = [];
